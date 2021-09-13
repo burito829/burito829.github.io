@@ -1,4 +1,35 @@
+#loadf{
+    z-index: 1;
+    float:none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    border-color: #FCA377;
+    background-color: #FCA377;
+}
+
+#loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #B1FA20;
+  border-bottom: 16px solid #B1FA20;
+  border-left: 16px solid #35D6DB;
+  border-right: 16px solid #35D6DB;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
 body{
+    margin: 0;
     font-family: Araial, sans-serif;
 }
 
@@ -6,6 +37,7 @@ nav{
     width: 100%;
     height: 55px;
     background-color:  #344051;
+    position:fixed;
 }
 .logo{
     color: #fff;
@@ -13,6 +45,33 @@ nav{
     line-height:  55px;
     padding-left: 248px;
     float: left;
+}
+.logo a{
+    transition: all 0.1s;
+    display: inline-block;
+    transform: scale(1);
+    -webkit-animation: upd 1s ease forwards;
+    -o-animation: upd 1s ease forwards;
+    animation: upd 1s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.logo a:active{
+    color: white;
+}
+
+.logo a:visited{
+    color: white;
+}
+
+.logo a:hover{
+    color: #FFD300;
+}
+
+.logo a:active{
+    transform: scale(1.2);
 }
 
 .menu{
@@ -23,15 +82,42 @@ nav{
 .menu li{
     float: left;
     line-height: 55px;
-    color: #fff;
     font-size: 18px;
     margin-right: 20px;
-    text-transform: capitalize;    
+    text-transform: capitalize;
+    opacity: 0;
+    -webkit-animation: upd 1s ease forwards;
+    -o-animation: upd 1s ease forwards;
+    animation: upd 1s ease forwards;
+}
+
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    transform: scale(1);
+}
+
+.menu li a:active{
+    color: white;
+}
+
+.menu li a:visited{
+    color: white;
+}
+
+.menu li a:hover{
+    color: #FFD300;
+}
+
+.menu li a:active{
+    transform: scale(1.2);
 }
 
 .main{
     width: 100%;
-    height: calc(100% - 55px);
+    height: 100%;
     background: url("../img/bad_boy.png") 90% 34%/auto 160% no-repeat , url("../img/mainf.png") center/cover no-repeat;
 }
 
@@ -40,7 +126,13 @@ nav{
     margin: 322px 0px 0px 212px;
     color: #2c384a;
     text-align: center;
-    
+    opacity: 0;
+    -webkit-animation: wzh 2s ease forwards;
+    -o-animation: wzh 2s ease forwards;
+    animation: wzh 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .title_container h1 {
@@ -62,6 +154,38 @@ nav{
     margin: 24px 12px 0px 12px;
     padding: 12px 10px;
     border-radius: 5%;    
+}
+
+.title_container input{
+    transition: all 0.1s;
+    display: inline-block;
+    transform: scale(1);
+}
+
+.title_container input:active{
+    color: white;
+}
+
+.title_container input:visited{
+    color: white;
+}
+
+.title_container input:hover{
+    color: white;
+    background-color: #6245C1;
+    border: 4px solid #6346C1;
+}
+
+.title_container input:active{
+    border: 4px solid #6346C1;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; 
+    margin: 24px 12px 0px 12px;
+    padding: 12px 10px;
+    background-color: #6245C1;
+    border-radius: 10%;
+    transform: scale(1.2);
 }
 
 .about_me {
@@ -311,15 +435,13 @@ nav{
 }
 
 .contact_container {
-    width: 100%;
-    height: calc(100% - 114px);
     float: left;
     text-align: center;
-    background:  url("../img/minus.png") 755px 153px/auto no-repeat;
+    background:  url("../img/minus.png") 750px 153px/auto no-repeat;
 }
 
 .contact_container h4{
-    margin: 114px 0px 15px 695px;
+    margin: 110px 0px 15px 690px;
     font-size: 24px; 
     font-weight: bold;
     color: #ffffff; 
@@ -336,7 +458,7 @@ nav{
 .contact_container ul{
     width: 100%;
     float: left;
-    margin: 68px 0px 0px 24%;  
+    margin: 26px 0px 0px 23.5%;  
     text-transform: capitalize;
 }
 
@@ -364,29 +486,102 @@ nav{
     font-size: 18px;
     font-weight: bold;
     margin: center;
-    padding: 25px;
+    padding-bottom: 25px;
     text-transform: uppercase;
 }
 
-.contact_container1 {
+
+.Name_Email {
+    float: left;
     width: 100%;
-    height: 100;
+    height: 100%;
+    margin: 23px 0px 0px 425px;
+}
+
+.Name_Email input {
+    float: left;
+    display: block;
+    width: 325px;
+    height: 34px;
+    margin: 0px 16px 0px 16px;
+    color: #5d5d5e;
+    
+}
+
+.contact_container textarea {
+     float: left;
+     display: block;
+     width: 682px;
+     height: 96px;
+     margin: 14px 0px 15px 441px;
+     color: #5d5d5e;
 }
 
 
-.contact_container1 #button { 
+.contact_container #button { 
     float: left;
+    display: block;
     border: 3px solid #ffffff;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff; 
-    margin: 24px 12px 0px 12px;
+    margin: 32px 0px 15px 720px;
     padding: 12px 10px;
     border-radius: 5%;
     background-color: transparent;
 }
 
+<! Анимации>
 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes upd{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.menu li:nth-child(1){
+    animation-delay: 3.3s;
+}
+.menu li:nth-child(2){
+    animation-delay: 3.6s;
+}
+.menu li:nth-child(3){
+    animation-delay: 3.9s;
+}
+.menu li:nth-child(4){
+    animation-delay: 4.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 4.5s;
+}
+.menu li:nth-child(6){
+    animation-delay: 4.8s;
+}
+
+@keyframes wzh{
+    from{
+        opacity: 0;
+        margin-left: -300;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: 212;
+    }
+}
 
 
 
