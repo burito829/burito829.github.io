@@ -34,6 +34,7 @@ body{
 }
 
 nav{
+    z-index: 1;
     width: 100%;
     height: 55px;
     background-color:  #344051;
@@ -194,8 +195,16 @@ nav{
     text-align: center;
 }
 
+
 .my_discription_container {
     background:  url("../img/minus.png") center 30px/auto no-repeat;
+    opacity: 0;
+    -webkit-animation: my_disco1 2s ease forwards;
+    -o-animation: my_disco1 2s ease forwards;
+    animation: my_disco1 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .my_discription_container h3{
@@ -203,16 +212,37 @@ nav{
     font-size: 24px; 
     font-weight: bold;
     color: #263244; 
+    opacity: 0;
+    -webkit-animation: my_disco2 2s ease forwards;
+    -o-animation: my_disco2 2s ease forwards;
+    animation: my_disco2 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .my_discription_container img{
     margin: 65px 0px 0px 0px;
+    opacity: 0;
+    -webkit-animation: my_disco3 2s ease forwards;
+    -o-animation: my_disco3 2s ease forwards;
+    animation: my_disco3 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .my_discription_container p{
     margin: 28px 0px 0px 0px;
     font-size: 16px; 
     color: #3f495a; 
+    opacity: 0;
+    -webkit-animation: upd 2s ease forwards;
+    -o-animation: upd 2s ease forwards;
+    animation: upd 2s ease forwards;
+    -webkit-animation-delay: 3.5s;
+    -o-animation-delay: 3.5s;
+    animation-delay: 3.5s;
 }
 
 .about_me input {
@@ -224,19 +254,55 @@ nav{
     padding: 12px 10px 12px 25px;
     border-radius: 5%;
     background:  url("../img/ico_dow.png") 5px center/auto no-repeat;
+    opacity: 0;
+    -webkit-animation: my_disco4 2s ease forwards;
+    -o-animation: my_disco4 2s ease forwards;
+    animation: my_disco4 2s ease forwards;
+    -webkit-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.about_me input:visited{
+    color: white;
+}
+
+.about_me input:hover{
+    color: white;
+    background-color: #6245C1;
+    border: 4px solid #6346C1;
+}
+
+.about_me input:active{
+    border: 4px solid #6346C1;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; 
+    margin: 24px 12px 0px 12px;
+    padding: 12px 14px 12px 31px;
+    background-color: #6245C1;
+    border-radius: 10%;
+    transform: scale(1.2);
 }
 
 .my_skills {
     width: 100%;
     height: calc(100% - 200px);
     background: url("../img/skf.png") center/cover no-repeat;
-    float: left: ;
+    float: left;
 }
 
 .skills_container {
     float: left;
     text-align: center;
     background:  url("../img/minus.png") 745px 153px/auto no-repeat;
+    opacity: 0;
+    -webkit-animation: my_disco1 2s ease forwards;
+    -o-animation: my_disco1 2s ease forwards;
+    animation: my_disco1 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .skills_container h3{
@@ -244,7 +310,14 @@ nav{
     font-size: 24px; 
     font-weight: bold;
     color: #263244; 
-    float: left;
+    float: right;
+    opacity: 0;
+    -webkit-animation: my_sk1 2s ease forwards;
+    -o-animation: my_sk1 2s ease forwards;
+    animation: my_sk1 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .skills_container ul{
@@ -255,7 +328,14 @@ nav{
 .skills_container li {
     float: left;
     margin: 0px 53px;
-    text-transform: capitalize;    
+    text-transform: capitalize;
+    opacity: 0;
+    -webkit-animation: my_sk2 2s ease forwards;
+    -o-animation: my_sk2 2s ease forwards;
+    animation: my_sk2 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .skills_container h5 {    
@@ -264,6 +344,12 @@ nav{
     font-weight: bold;
     margin: center;
     padding: 25px;
+    -webkit-animation: my_sk3 2s ease forwards;
+    -o-animation: my_sk3 2s ease forwards;
+    animation: my_sk3 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .skills_container img {    
@@ -271,47 +357,92 @@ nav{
 }
 
 .cases {
+    clear: left/right;
     width: 100%;
     height: calc(100% - 200px);
     text-align: center;
-    background:  url("../img/minus.png") center 40px/auto no-repeat;
+    float: left;
+}
+
+.cases_container {
+    width: 100%;
+    height: 100%;
+    background:  url("../img/minus.png") center 153px/auto no-repeat;
+    float: left;
+    opacity: 0;
+    -webkit-animation: cs1 2s ease forwards;
+    -o-animation: cs1 2s ease forwards;
+    animation: cs1 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .cases_container h3{
-    margin: 114px 0px 15px 0px;
+    margin: 114px 0px 155px 707px;
     font-size: 24px; 
     font-weight: bold;
-    color: #263244; 
+    color: #263244;
+    float: right;
+    opacity: 0;
+    -webkit-animation: cs2 2s ease forwards;
+    -o-animation: cs2 2s ease forwards;
+    animation: cs2 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .price {
     width: 100%;
-    height: calc(100% - 200px);
-    background:  url("../img/minus.png") center 40px/auto no-repeat;
-}
-
-.price h3{
-    text-align: center;
-    margin: 114px 0px 65px 0px;
-    font-size: 24px; 
-    font-weight: bold;
-    color: #263244; 
+    height: calc(100% - 100px);
+    clear: left/right;
 }
 
 .price_container{
     width: 100%;
-    margin-left: 25%;
-    text-transform: capitalize;   
+    background:  url("../img/minus.png") center 116px/auto no-repeat;
+    float: left;
+    opacity: 0;
+    -webkit-animation: pc1 2s ease forwards;
+    -o-animation: pc1 2s ease forwards;
+    animation: pc1 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
-.price_container h4{
+.price_container h3{
+    margin: 84px 0px 25px 0px;
+    font-size: 24px; 
+    font-weight: bold;
+    color: #263244;
+    float: right;
+    opacity: 0;
+    -webkit-animation: pc2 2s ease forwards;
+    -o-animation: pc2 2s ease forwards;
+    animation: pc2 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.price_container2 h4{
+    float: left;
     margin: 15px 0px 0px 1px;
     font-size: 20px; 
     font-weight: bold;
-    color: #263244; 
+    color: #263244;
+    opacity: 0;
+    -webkit-animation: pc4 2s ease forwards;
+    -o-animation: pc4 2s ease forwards;
+    animation: pc4 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
-.price_container select{
+.price_container2 select{
     box-sizing: border-box;
     background-color: #eeeeee;
     width: 50%;
@@ -319,13 +450,29 @@ nav{
     margin: 14px 0px 15px 0px;
     font-size: 20px; 
     font-weight: bold;
-    color: #263244; 
-}
-.price_container ul{
-    width: 50%;
+    color: #263244;
+    opacity: 0;
+    -webkit-animation: pc3 2s ease forwards;
+    -o-animation: pc3 2s ease forwards;
+    animation: pc3 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
-.price_container #n1 {
+.price_container2 ul{
+    float: left;
+    width: 50%;
+    opacity: 0;
+    -webkit-animation: pc4 2s ease forwards;
+    -o-animation: pc4 2s ease forwards;
+    animation: pc4 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.price_container2 #n1 {
     float: left;
     font-size: 16px; 
     font-weight: bold;
@@ -333,7 +480,7 @@ nav{
     text-transform: capitalize;
 }
 
-.price_container #n2 {
+.price_container2 #n2 {
     margin-bottom: 20px;
     margin-left: 99%;
     font-size: 16px; 
@@ -342,7 +489,7 @@ nav{
     text-transform: capitalize;
 }
 
-.price_container #n3 {
+.price_container2 #n3 {
     margin-left: 99%;
     font-size: 16px; 
     font-weight: bold;
@@ -352,21 +499,33 @@ nav{
 
 .statistics {
     width: 100%;
-    height: calc(100% - 200px);
+    height: calc(100% - 150px);
     background: url("../img/skf.png") center/cover no-repeat;
-    float: left: ;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 60px;
+    align-items: center;
+    position: relative;
+    float: left;
+}
+
+.statistics parl{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
 }
 
 .statistics_container {
     float: left;
     text-align: center;
-    background:  url("../img/minus.png") 50% 153px/auto no-repeat;
-    text-transform: capitalize;
-    
+    background:  url("../img/minus.png") 50% 25px/auto no-repeat;   
 }
 
 .statistics_container h4{
-    margin: 114px 0px 15px 650px;
+    margin: 14px 0px 0px 650px;
     font-size: 24px; 
     font-weight: bold;
     color: #263244; 
@@ -401,13 +560,16 @@ nav{
 }
 
 .comment {
+    clear: left/right;
     width: 100%;
     height: calc(100% - 200px);
-    background:  url("../img/minus.png") 50% 33px/auto no-repeat;
+    float: left;
 }
 
 .comment_container {
+    float: left;
     text-align: center;
+    background:  url("../img/minus.png") 50% 33px/auto no-repeat;
 }
 
 .comment_container h4{
@@ -428,10 +590,10 @@ nav{
 }
 
 .contact {
+    float: left;
     width: 100%;
     height: 100%;
     background: url("../img/contf.png") center/cover no-repeat;
-    float: left: ;
 }
 
 .contact_container {
@@ -574,18 +736,196 @@ nav{
 @keyframes wzh{
     from{
         opacity: 0;
-        margin-left: -300;
+        margin-left: -100px;
     }
     
     to{
         opacity: 1;
-        margin-left: 212;
+        margin-left: 212px;
     }
 }
 
+@keyframes my_disco1{
+    from{
+        opacity: 0;
+        margin-left: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+    }
+}
 
+@keyframes my_disco2{
+    from{
+        opacity: 0;
+        margin-right: -400px;
+    }
+    
+    to{
+        opacity: 2;
+        margin-right: center;
+    }
+}
 
+@keyframes my_disco3{
+    from{
+        opacity: 0;
+        margin-left: -100px;
+        transform: rotate(180deg);
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+        transform: rotate(0);
+    }
+}
 
+@keyframes my_disco4{
+    from{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-top: 24px;
+    }
+}
+
+@keyframes my_sk1{
+    from{
+        opacity: 0;
+        margin-right: 0;
+    }
+    
+    to{
+        opacity: 2;
+        margin-right: 710px;
+    }
+}
+
+.skills_container li:nth-child(1){
+    animation-delay: 3.3s;
+}
+.skills_container li:nth-child(2){
+    animation-delay: 3.6s;
+}
+.skills_container li:nth-child(3){
+    animation-delay: 3.9s;
+}
+.skills_container li:nth-child(4){
+    animation-delay: 4.2s;
+}
+
+@keyframes my_sk2{
+     from{
+        opacity: 0;
+        margin-left: -100px;
+        transform: rotate(720deg);
+    }
+    
+    to{
+        opacity: 1;
+        transform: rotate(0);
+        float: left;
+         margin: 0px 53px;
+        text-transform: capitalize;
+    }
+}
+
+@keyframes my_sk3{
+     from{
+        opacity: 0;
+        margin-left: -100px;
+        transform: rotate(180deg);
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+        transform: rotate(0);
+    }
+}
+
+@keyframes cs1{
+    from{
+        opacity: 0;
+        margin-left: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+    }
+}      
+
+@keyframes cs2{
+    from{
+        opacity: 0;
+        margin-right: 0;
+    }
+    
+    to{
+        opacity: 1;
+        margin-right: 47.5%;
+    }
+}
+
+@keyframes pc1{
+    from{
+        margin-left: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+    }
+}      
+
+@keyframes pc2{
+    from{
+        opacity: 0;
+        margin-right: 0;
+    }
+    
+    to{
+        opacity: 1;
+        margin-right: 43%;
+    }
+}
+
+@keyframes pc3{
+    from{
+        opacity: 0;
+        width: 50%;
+        height: 50px;
+        margin-top: 14px;
+        margin-left: 0px;
+    }
+    
+    to{
+        opacity: 1;
+        width: 50%;
+        height: 50px;
+        margin-top: 14px;
+        margin-left: 25%;
+    }
+}
+
+@keyframes pc4{
+    from{
+        opacity: 0;
+        margin-left: 0px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: 25%;
+    }
+}
 
 
 
