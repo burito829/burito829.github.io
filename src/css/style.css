@@ -396,13 +396,13 @@ nav{
 .price {
     width: 100%;
     height: calc(100% - 100px);
-    clear: left/right;
+    float: left;
 }
 
 .price_container{
     width: 100%;
-    background:  url("../img/minus.png") center 116px/auto no-repeat;
     float: left;
+    background:  url("../img/minus.png") center 116px/auto no-repeat;
     opacity: 0;
     -webkit-animation: pc1 2s ease forwards;
     -o-animation: pc1 2s ease forwards;
@@ -425,6 +425,10 @@ nav{
     -webkit-animation-delay: 3s;
     -o-animation-delay: 3s;
     animation-delay: 3s;
+}
+
+.price_container 2{
+    
 }
 
 .price_container2 h4{
@@ -499,14 +503,13 @@ nav{
 
 .statistics {
     width: 100%;
-    height: calc(100% - 150px);
+    height: calc(100% - 200px);
     background: url("../img/skf.png") center/cover no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
     color: #ffffff;
     font-size: 60px;
-    align-items: center;
+    background-attachment: fixed;
+    display: flex;
+    color: #ffffff;
     position: relative;
     float: left;
 }
@@ -519,34 +522,67 @@ nav{
 }
 
 .statistics_container {
+    position: absolute;
+    border: 5px solid rgb(255, 15, 15);
+    width: 100%;
+    margin-bottom: 140px;
     float: left;
-    text-align: center;
-    background:  url("../img/minus.png") 50% 25px/auto no-repeat;   
+    background:  url("../img/minus.png") center 116px/auto no-repeat;
+    opacity: 1; 
+    -webkit-animation: st 2s ease forwards;
+    -o-animation: st 2s ease forwards;
+    animation: st 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .statistics_container h4{
-    margin: 14px 0px 0px 650px;
+    margin-top:  84px;
+    margin-bottom: 20px;
     font-size: 24px; 
     font-weight: bold;
     color: #263244; 
-    float: left;
+    float: right;
     text-transform: uppercase;
+    opacity: 0;
+    -webkit-animation: st1 2s ease forwards;
+    -o-animation: st1 2s ease forwards;
+    animation: st1 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
-.statistics_container ul{
+.statistics_container2 {
     width: 100%;
-    float: left;
-    margin: 108px 0px 0px 7%;  
-    text-transform: capitalize;
+    position: absolute;
+    margin-top: 150px;
+    border: 5px solid rgb(25, 205, 105);
+    text-align: center;
 }
 
-.statistics_container li {
+.statistics_container2 ul{
+    margin-left: 4%;
+    margin-top: 40px;
     float: left;
-    margin: 0px 53px;
-    text-transform: capitalize;    
+    text-align: center;
 }
 
-.statistics_container h5 {    
+.statistics_container2 li {
+    float: left;
+    margin: 0px 55px;
+    text-transform: capitalize;  
+    opacity: 0;
+    -webkit-animation: st2 2s ease forwards;
+    -o-animation: st2 2s ease forwards;
+    animation: st2 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.statistics_container2 h5 {    
     color: #263244;
     font-size: 18px;
     font-weight: bold;
@@ -555,28 +591,45 @@ nav{
     text-transform: uppercase;
 }
 
-.statistics_container img {    
+.statistics_container2 img {    
     margin: center;
 }
 
 .comment {
-    clear: left/right;
     width: 100%;
     height: calc(100% - 200px);
     float: left;
 }
 
 .comment_container {
+    width: 100%;
+    margin-bottom: 150px;
     float: left;
-    text-align: center;
-    background:  url("../img/minus.png") 50% 33px/auto no-repeat;
+    background:  url("../img/minus.png") center 116px/auto no-repeat;
+    opacity: 1; 
+    -webkit-animation: cm 2s ease forwards;
+    -o-animation: cm 2s ease forwards;
+    animation: cm 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .comment_container h4{
-    margin: 114px 0px 15px 0px;
+    margin-top:  84px;
+    margin-bottom: 20px;
     font-size: 24px; 
     font-weight: bold;
     color: #263244; 
+    float: right;
+    text-transform: uppercase;
+    opacity: 0;
+    -webkit-animation: cm1 2s ease forwards;
+    -o-animation: cm1 2s ease forwards;
+    animation: cm1 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .comment_container img{
@@ -597,40 +650,68 @@ nav{
 }
 
 .contact_container {
+    width: 100%;
+    margin-bottom: 40px;
     float: left;
-    text-align: center;
-    background:  url("../img/minus.png") 750px 153px/auto no-repeat;
+    background:  url("../img/minus.png") center 116px/auto no-repeat;
+    opacity: 0; 
+    -webkit-animation: cc 2s ease forwards;
+    -o-animation: cc 2s ease forwards;
+    animation: cc 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .contact_container h4{
-    margin: 110px 0px 15px 690px;
+    margin-top:  84px;
+    margin-bottom: 20px;
     font-size: 24px; 
     font-weight: bold;
-    color: #ffffff; 
-    float: left;
+    color: #ffffff;
+    float: right;
+    text-transform: uppercase;
+    opacity: 0;
+    -webkit-animation: cc1 2s ease forwards;
+    -o-animation: cc1 2s ease forwards;
+    animation: cc1 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
-.contact_container p {
+.contact_container2 {   
+    text-align: center;
+}
+
+.contact_container2 p {
     margin: 180px 0px 15px 0px;
     font-size: 14px; 
     font-weight: bold;
     color: #ffffff; 
 }
 
-.contact_container ul{
+.contact_container2 ul{
     width: 100%;
     float: left;
-    margin: 26px 0px 0px 23.5%;  
+    margin: 26px 0px 0px 23.6%;  
     text-transform: capitalize;
 }
 
-.contact_container li {
+.contact_container2 li {
     float: left;
     margin: 0px 33px;
-    text-transform: capitalize;    
+    text-transform: capitalize;
+    opacity: 0;
+    -webkit-animation: cc2 2s ease forwards;
+    -o-animation: cc2 2s ease forwards;
+    animation: cc2 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
-.contact_container h1 {    
+.contact_container2 h1 {    
     color: #ffffff;
     font-size: 14px;
     font-weight: bold;
@@ -639,11 +720,11 @@ nav{
     text-transform: uppercase;
 }
 
-.contact_container img {    
+.contact_container2 img {    
     margin: center;
 }
 
-.contact_container h5 {    
+.contact_container2 h5 {    
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
@@ -667,20 +748,83 @@ nav{
     height: 34px;
     margin: 0px 16px 0px 16px;
     color: #5d5d5e;
-    
+    opacity: 0;
+    -webkit-animation: cc2 2s ease forwards;
+    -o-animation: cc2 2s ease forwards;
+    animation: cc2 2s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;    
 }
 
-.contact_container textarea {
+.Name_Email input:active{
+    color: white;
+}
+
+.Name_Email input:visited{
+    color: white;
+}
+
+.Name_Email input:hover{
+    color: white;
+    background-color: #6245C1;
+    border: 4px solid #6346C1;
+}
+
+.Name_Email input:focus{
+    color: white;
+    background-color: #b8faff;
+    border: 2px solid #6346C1;
+    font-size: 12px;
+    font-weight: bold;
+    color: white; 
+    padding: 2px 2px;
+    transform: scale(1.1);
+}
+
+.contact_container2 textarea {
      float: left;
      display: block;
      width: 682px;
      height: 96px;
      margin: 14px 0px 15px 441px;
      color: #5d5d5e;
+    opacity: 0;
+    -webkit-animation: cc2 2s ease forwards;
+    -o-animation: cc2 2s ease forwards;
+    animation: cc2 2s ease forwards;
+    -webkit-animation-delay: 3.2s;
+    -o-animation-delay: 3.2s;
+    animation-delay: 3.2s;
+}
+
+.contact_container2 textarea:active{
+    color: white;
+}
+
+.contact_container2 textarea:visited{
+    color: white;
+}
+
+.contact_container2 textarea:hover{
+    color: white;
+    background-color: #6245C1;
+    border: 4px solid #6346C1;
+}
+
+.contact_container2 textarea:focus{
+    color: white;
+    background-color: #b8faff;
+    border: 2px solid #6346C1;
+    font-size: 12px;
+    font-weight: bold;
+    color: white; 
+    padding: 2px 2px;
+    transform: scale(1.05);
 }
 
 
-.contact_container #button { 
+.contact_container2 #button { 
     float: left;
     display: block;
     border: 3px solid #ffffff;
@@ -690,8 +834,41 @@ nav{
     margin: 32px 0px 15px 720px;
     padding: 12px 10px;
     border-radius: 5%;
+    opacity: 0;
     background-color: transparent;
+    -webkit-animation: cc3 2s ease forwards;
+    -o-animation: cc3 2s ease forwards;
+    animation: cc3 2s ease forwards;
+    -webkit-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 }
+
+.contact_container2 #button:visited{
+    color: white;
+}
+
+.contact_container2 #button:hover{
+    color: white;
+    background-color: #6245C1;
+    border: 4px solid #6346C1;
+}
+
+.contact_container2 #button:active{
+    float: left;
+    display: block;
+    border: 4px solid #6346C1;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; 
+    margin: 32px 0px 15px 720px;
+    padding: 12px 10px;
+    background-color: #6245C1;
+    border-radius: 10%;
+    transform: scale(1.2);
+}
+
+
 
 <! Анимации>
 
@@ -876,6 +1053,7 @@ nav{
 
 @keyframes pc1{
     from{
+        opacity: 0;
         margin-left: -100px;
     }
     
@@ -927,8 +1105,153 @@ nav{
     }
 }
 
+@keyframes st{
+     from{
+        opacity: 1;
+        margin-left: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+    }
+}
 
+@keyframes st1{
+    from{
+        opacity: 0;
+        margin-right: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-right: 40%;
+    }
+}
 
+@keyframes st2{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
 
+.statistics_container2 li:nth-child(4){
+    animation-delay: 3.3s;
+}
+.statistics_container2 li:nth-child(3){
+    animation-delay: 3.6s;
+}
+.statistics_container2 li:nth-child(2){
+    animation-delay: 3.9s;
+}
+.statistics_container2 li:nth-child(1){
+    animation-delay: 4.2s;
+}
 
+@keyframes cm{
+     from{
+        opacity: 1;
+        margin-left: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+    }
+}
 
+@keyframes cm1{
+    from{
+        opacity: 0;
+        margin-right: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-right: 46.5%;
+    }
+}
+
+@keyframes ct{
+     from{
+        opacity: 1;
+        margin-left: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+    }
+}
+
+@keyframes ct1{
+    from{
+        opacity: 0;
+        margin-right: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-right: 46.5%;
+    }
+}
+
+@keyframes cc{
+     from{
+        opacity: 1;
+        margin-left: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: center;
+    }
+}
+
+@keyframes cc1{
+    from{
+        opacity: 0;
+        margin-right: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-right: 43.3%;
+    }
+}
+
+@keyframes cc2{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+.contact_container2 li:nth-child(1){
+    animation-delay: 3.3s;
+}
+.contact_container2 li:nth-child(2){
+    animation-delay: 3.6s;
+}
+.contact_container2 li:nth-child(3){
+    animation-delay: 3.9s;
+}
+
+@keyframes cc3{
+    from{
+        opacity: 0;
+        margin-top: -100px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-top: 32px;
+    }
+}
