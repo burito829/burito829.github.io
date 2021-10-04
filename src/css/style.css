@@ -523,7 +523,6 @@ nav{
 
 .statistics_container {
     position: absolute;
-    border: 5px solid rgb(255, 15, 15);
     width: 100%;
     margin-bottom: 140px;
     float: left;
@@ -558,7 +557,6 @@ nav{
     width: 100%;
     position: absolute;
     margin-top: 150px;
-    border: 5px solid rgb(25, 205, 105);
     text-align: center;
 }
 
