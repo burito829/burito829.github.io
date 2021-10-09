@@ -5,15 +5,23 @@
     <meta charset="UTF-8">
     <meta name="autor" content="Yuri">
     <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="css/reset.css">
-    <link  rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link  rel="stylesheet" href="css/style.css">   
     <title>Прилепо Юрий начинающий Веб-разработчик</title>
 </head>
 <body onload="myFunction()">
     <header> <!- Верхнее меню ->
        <nav>
-          <div class="logo"><a href="#">Прилепо Юрий</a></div> 
-          <div class="menu">
+         <div class="container">
+         <div class="row">
+         <div class="col-xxl-2 col-lg-3 col-7">
+             <div class="logo"><a href="#">Прилепо Юрий</a></div> 
+         </div>
+         
+         <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block ">
+             <div class="menu">
               <ul>
                   <li><a href="#">Обо мне</a></li>
                   <li><a href="#">Услуги</a></li>
@@ -22,11 +30,29 @@
                   <li><a href="#">Отзывы</a></li>
                   <li><a href="#">Контакты</a></li>
               </ul>
-          </div>          
+          </div> 
+         </div>
+          <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+              <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle white_btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+Навигация
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                 <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                  <li><a class="dropdown-item" href="#">Услуги</a></li>
+                  <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                  <li><a class="dropdown-item" href="#">Прайс</a></li>
+                  <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                  <li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div>
+          </div>
+           </div> 
+           </div>                   
        </nav>       
-    </header>
+    </header>        
        <div id="loadf"></div>
-   <div id="loader"></div>
+   <div id="loader"></div> 
    <script>
 var myVar;
 
@@ -40,6 +66,9 @@ function showPage() {
 }
 </script>
     <div class="main"> <!- Титульный блок ->
+       <div class="container h-100">
+         <div class="row align-items-center h-100">
+       <div class="col-6 " >
         <div class="title_container">
             <h1>Привет<br> Я Прилепо Юрий</h1>
             <h4>Фулл стек веб-разработчик и Android-разработчик</h4> 
@@ -47,57 +76,87 @@ function showPage() {
             <input type="button" value="Мои работы">  
        
         </div>
+        </div>
     </div>
-    
+    </div>
+    </div> 
     <div class="about_me"> <!- Блок: обо мне ->
+       <div class="container ">
+         <div class="row justify-content-md-center ">   
+       <div class="col-xxl-8 col-xl-10 align-self-center " >
         <div class="my_discription_container">
             <h3>ОБО МНЕ</h3>
             <img src="img/min_boy.png">
             <p> По образованию техник-программист. Занимался разработкой кросс платформенного приложения позваляющего создавать базовую структуру сайта без кодировки.<br>Начинающий веб разработчик</p>
         </div>
+             </div>
+           </div>
+           </div>
         <input type="button" value="Скачать резюме"> 
     </div>
-    
     <div class="my_skills"> <!- Блок: что я умею ->
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
         <div class="skills_container">
            <h3>ЧТО Я УМЕЮ</h3>
+        </div>  
+        </div>
+        <div class="col-xxl-10  align-self-center " >
+        <div class="skills_container2">   
             <ul>
-                <li id="n1">
+                <li class="list-two1" id="n1">
                     <img src="img/pc.png">
                     <h5> Веб-дизайн</h5>
                     <p></p>
                 </li>
-                <li id="n2">
+                <li class="list-two2" id="n2">
                    <img src="img/skb.png">
                     <h5> Разработка</h5>
                     <p></p>
                 </li>
-                <li id="n3">
+                <li class="list-two3" id="n3">
                    <img src="img/satl.png">
                     <h5> CEO-Оптимизация</h5>
                     <p></p>
                 </li>
-                <li id="n4">
+                <li class="list-two4" id="n4">
                     <img src="img/grom.png">
                     <h5> Маркетинг</h5>
                     <p></p>
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="cases"> <!- Блок: Кейсы ->
-        <div class="cases_container">
-            <h3>Кейсы</h3>
-            <p> </p>
+             </div>
+           </div>
         </div>
     </div>
-    <div class="price"><!- Блок: Расчёт стоимости ->
+    <div class="cases"> <!- Блок: Кейсы ->
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
+        <div class="cases_container">
+            <h3>Кейсы</h3>
+           </div> 
+           </div>   
+            <div class="col-xxl-10  align-self-center " >
+            <p> </p>
+           </div>
+           </div>
+        </div>
+    </div>
+    <div class="price"><!-- Блок: Расчёт стоимости -->
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-3 align-self-center " >
         <div class="price_container">
             <h3>Расчёт стоимости</h3>   
         </div>
+             </div>
             <br>
             <br>
-            <div class="price_container2">    
+            <div class="col-xxl-9  align-self-center " >
+            <div class="price_container2 ">    
             <h4>ТИП САЙТА</h4>
             <select name="list1" id="list1" >
                <option disabled selected>Выберите пункт </option>
@@ -124,6 +183,9 @@ function showPage() {
                <li id="n1">Стоимость</li>
                <li id="n3">0</li>
            </ul> 
+        </div>
+             </div>
+           </div>
         </div>
     </div>
     <div class="statistics"> <!- Блок: Немного статистики ->
@@ -194,5 +256,6 @@ function showPage() {
     </div>  
     <div class="maps"> </div><!- Карта ->
     <div class="down"></div><!- Низ страницы ->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
