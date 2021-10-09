@@ -50,9 +50,9 @@
            </div> 
            </div>                   
        </nav>       
-    </header>        
-       <div id="loadf"></div>
-   <div id="loader"></div> 
+    </header>
+    <div id="loadf"></div>
+    <div id="loader"></div> 
    <script>
 var myVar;
 
@@ -147,16 +147,14 @@ function showPage() {
     </div>
     <div class="price"><!-- Блок: Расчёт стоимости -->
        <div class="container">
-         <div class="row justify-content-md-center">   
-       <div class="col-xxl-3 align-self-center " >
+         <div class="row align-items-center">   
+       <div class="col-xxl-3 " >
         <div class="price_container">
             <h3>Расчёт стоимости</h3>   
         </div>
              </div>
-            <br>
-            <br>
-            <div class="col-xxl-9  align-self-center " >
-            <div class="price_container2 ">    
+            <div class="col-xxl-9" >
+            <div class="price_container2">    
             <h4>ТИП САЙТА</h4>
             <select name="list1" id="list1" >
                <option disabled selected>Выберите пункт </option>
@@ -175,23 +173,28 @@ function showPage() {
                <option value="Opt1" ></option>
                <option value="Opt2" ></option>
             </select>
-            <br>
-            <br>
             <ul>
                <li id="n1">Сроки</li>
                <li id="n2">0</li>
-               <li id="n1">Стоимость</li>
-               <li id="n3">0</li>
            </ul> 
+           <ul>
+               <li id="n1">Стоимость</li>
+               <li id="n2">0</li>
+           </ul>     
         </div>
              </div>
            </div>
         </div>
     </div>
     <div class="statistics"> <!- Блок: Немного статистики ->
+      <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
        <div class="statistics_container">
            <h4>Немного статистики</h4>
        </div>
+             </div>
+             <div class="col-xxl-10  align-self-center " >
         <div class="statistics_container2">
            <ul>
                 <li id="n1">
@@ -215,26 +218,41 @@ function showPage() {
                     <p></p>
                 </li>
             </ul>
+                 </div>
+             </div>
+          </div>
        </div>
        <div class="parl"></div>
     </div>
     <div class="comment">
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
         <div class="comment_container">
             <h4>Отзывы</h4>
+           </div>
+             </div>
+            <div class="col-xxl-10  align-self-center " >
             <img src=""> 
-            <p></p>           
+            <p></p>  
+             </div>
+           </div>         
         </div>
     </div>
     <div class="contact"> <!- Блок: Мои контакты ->
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
         <div class="contact_container">
             <h4>МОИ КОНТАКТЫ</h4>
         </div>
+         </div>
         <div class="contact_container2">    
              <p id="ct"> Что-то не на русском</p>
             <ul>
                <li>
                    <img src="img/loc.png">
-                   <h1> Республика Беларусь</h1>
+                   <h1> Республика <br> Беларусь</h1>
                </li>
                <li>
                    <img src="img/konv.png">
@@ -246,14 +264,20 @@ function showPage() {
                 </li>
            </ul>
            <h5>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h5> 
+           </div>
+           <div class="col-8  align-self-center " >
            <div class="Name_Email">
-               <input id="type_text1" type="text" name="type_text1" value="" placeholder="Имя">  
+               <input id="type_text1" type="text" name="type_text1" value="" placeholder="Имя"> 
                <input id="type_text2" type="text" name="type_text2" value="" placeholder="Email"> 
-            </div>
+               </div>
+            <div class="tb">
            <textarea id="type_text3"name="type_text3" id="1" cols="10" rows="10" placeholder="Сообщение"></textarea> 
-           <input id="button" type="button" value="Отправить">        
+           <input id="button" type="button" value="Отправить">   
+           </div>
+            </div>      
         </div>
-    </div>  
+    </div>
+    </div>
     <div class="maps"> </div><!- Карта ->
     <div class="down"></div><!- Низ страницы ->
     <script src="js/bootstrap.bundle.min.js"></script>
