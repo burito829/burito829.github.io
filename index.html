@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Моя первая страница">
+    <meta charset="UTF-8">
+    <meta name="autor" content="Yuri">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link  rel="stylesheet" href="css/style.css">   
+    <title>Прилепо Юрий начинающий Веб-разработчик</title>
+</head>
+<body onload="myFunction()">
+    <header> <!- Верхнее меню ->
+       <nav>
+         <div class="container">
+         <div class="row">
+         <div class="col-xxl-2 col-lg-3 col-7">
+             <div class="logo"><a href="#">Прилепо Юрий</a></div> 
+         </div>
+         
+         <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block ">
+             <div class="menu">
+              <ul>
+                  <li><a href="#">Обо мне</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Кейсы</a></li>
+                  <li><a href="#">Прайс</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Контакты</a></li>
+              </ul>
+          </div> 
+         </div>
+          <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+              <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle white_btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+Навигация
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                 <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                  <li><a class="dropdown-item" href="#">Услуги</a></li>
+                  <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                  <li><a class="dropdown-item" href="#">Прайс</a></li>
+                  <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                  <li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div>
+          </div>
+           </div> 
+           </div>                   
+       </nav>       
+    </header>
+    <div id="loadf"></div>
+    <div id="loader"></div> 
+   <script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loadf").style.display = "none";
+}
+</script>
+    <div class="main"> <!- Титульный блок ->
+       <div class="container h-100">
+         <div class="row align-items-center h-100">
+       <div class="col-6 " >
+        <div class="title_container">
+            <h1>Привет<br> Я Прилепо Юрий</h1>
+            <h4>Фулл стек веб-разработчик и Android-разработчик</h4> 
+            <input type="button" value="Обо    мне" >  
+            <input type="button" value="Мои работы">  
+       
+        </div>
+        </div>
+    </div>
+    </div>
+    </div> 
+    <div class="about_me"> <!- Блок: обо мне ->
+       <div class="container ">
+         <div class="row justify-content-md-center ">   
+       <div class="col-xxl-8 col-xl-10 align-self-center " >
+        <div class="my_discription_container">
+            <h3>ОБО МНЕ</h3>
+            <img src="img/min_boy.png">
+            <p> По образованию техник-программист. Занимался разработкой кросс платформенного приложения позваляющего создавать базовую структуру сайта без кодировки.<br>Начинающий веб разработчик</p>
+        </div>
+             </div>
+           </div>
+           </div>
+        <input type="button" value="Скачать резюме"> 
+    </div>
+    <div class="my_skills"> <!- Блок: что я умею ->
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
+        <div class="skills_container">
+           <h3>ЧТО Я УМЕЮ</h3>
+        </div>  
+        </div>
+           </div>
+        </div>
+           <div class="container">
+        <div class="row justify-content-md-center">    
+        <div class="skills_container2 ">   
+           <div class="scl1 g-col-3">
+                <img src="img/pc.png">
+                    <h5> Веб-дизайн</h5>
+                    <p></p>
+           </div>
+           <div class="scl1 g-col-3">            
+                   <img src="img/skb.png">
+                    <h5> Разработка</h5>
+                    <p></p>
+           </div>     
+           <div class="scl1 g-col-3">     
+                   <img src="img/satl.png">
+                    <h5> CEO-Оптимизация</h5>
+                    <p></p>
+           </div>         
+          <div class="scl1 g-col-3">
+                    <img src="img/grom.png">
+                    <h5> Маркетинг</h5>
+                    <p></p>
+          </div>
+        </div>
+             </div>
+           </div>
+        </div>
+    <div class="cases"> <!- Блок: Кейсы ->
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
+        <div class="cases_container">
+            <h3>Кейсы</h3>
+           </div> 
+           </div>   
+            <div class="col-xxl-10  align-self-center " >
+            <p> </p>
+           </div>
+           </div>
+        </div>
+    </div>
+    <div class="price"><!-- Блок: Расчёт стоимости -->
+       <div class="container">
+         <div class="row align-items-center">   
+       <div class="col-xxl-3 " >
+        <div class="price_container">
+            <h3>Расчёт стоимости</h3>   
+        </div>
+             </div>
+            <div class="col-xxl-9" >
+            <div class="price_container2">    
+            <h4>ТИП САЙТА</h4>
+            <select name="list1" id="list1" >
+               <option disabled selected>Выберите пункт </option>
+               <option value="Opt1" ></option>
+                <option value="Opt2" ></option>
+            </select>
+            <h4>ДИЗАЙН</h4>
+            <select name="list1" id="list1" >
+               <option disabled selected>Выберите пункт </option>
+               <option value="Opt1" ></option>
+               <option value="Opt2" ></option>
+            </select>
+            <h4>АДАПТИВНОСТЬ</h4>
+            <select name="list1" id="list1" >
+               <option disabled selected>Выберите пункт </option>
+               <option value="Opt1" ></option>
+               <option value="Opt2" ></option>
+            </select>
+            <ul>
+               <li id="n1">Сроки</li>
+               <li id="n2">0</li>
+           </ul> 
+           <ul>
+               <li id="n1">Стоимость</li>
+               <li id="n2">0</li>
+           </ul>     
+        </div>
+             </div>
+           </div>
+        </div>
+    </div>
+    <div class="statistics"> <!- Блок: Немного статистики ->
+     <section id="stc" class=" align-items-center justify-content-center">
+      <div class="container text-center">
+         <div class="row justify-content-center">   
+       <div class="col-md-6 col-lg-8" >
+       <div class="statistics_container">
+           <h4>Немного статистики</h4>
+       </div>
+             </div>
+          </div>   
+            
+        <div class="statistics_container2">    
+        <div class="row justify-content-center">
+          <div class="col-xl-2 col-md-4 col-6"> 
+           <div class="scl2">
+                <img src="img/smile.png">
+                    <h5> Счасливых клиентов</h5>
+                    <p></p>
+           </div>
+           </div> 
+           <div class="col-xl-2 col-md-4 col-6">
+           <div class="scl2">            
+                   <img src="img/skbv.png">
+                    <h5> Часов работы</h5>
+                    <p></p>
+           </div>    
+           </div> 
+           <div class="col-xl-2 col-md-4 col-6"> 
+           <div class="scl2">     
+                   <img src="img/rb.png">
+                    <h5> Проектов завершено</h5>
+                    <p></p>
+           </div>      
+           </div> 
+           <div class="col-xl-2 col-md-4 col-6">   
+          <div class="scl2">
+                    <img src="img/win.png">
+                    <h5> Наград получено</h5>
+                    <p></p>
+          </div>
+          </div> 
+        </div>
+             </div>
+         </div>
+             </section>
+       <div class="parl"></div>
+    </div>
+    <div class="comment">
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
+        <div class="comment_container">
+            <h4>Отзывы</h4>
+           </div>
+             </div>
+            <div class="col-xxl-10  align-self-center " >
+            <img src=""> 
+            <p></p>  
+             </div>
+           </div>         
+        </div>
+    </div>
+    <div class="contact"> <!- Блок: Мои контакты ->
+       <div class="container">
+         <div class="row justify-content-md-center">   
+       <div class="col-xxl-2 align-self-center " >
+        <div class="contact_container">
+            <h4>МОИ КОНТАКТЫ</h4>
+        </div>
+         </div>
+        <div class="contact_container2">    
+             <p id="ct"> Что-то не на русском</p>
+            <ul>
+               <li>
+                   <img src="img/loc.png">
+                   <h1> Республика <br> Беларусь</h1>
+               </li>
+               <li>
+                   <img src="img/konv.png">
+                   <h1> prilepo1069@gmail.com</h1>
+                </li>
+                <li>
+                   <img src="img/tel.png">
+                   <h1> +375293624385</h1>
+                </li>
+           </ul>
+           <h5>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h5> 
+           </div>
+           </div>
+           <div class="row justify-content-md-center">  
+           <div class="col-8  align-self-center " >
+           <div class="Name_Email">
+               <input id="type_text1" type="text" name="type_text1" value="" placeholder="Имя"> 
+               <input id="type_text2" type="text" name="type_text2" value="" placeholder="Email"> 
+               </div>
+            <div class="tb">
+           <textarea id="type_text3"name="type_text3" id="1" cols="10" rows="10" placeholder="Сообщение"></textarea> 
+            
+           </div>
+            </div> 
+             </div>  
+             <input id="button" type="button" value="Отправить">     
+        
+    </div>
+    
+    </div>
+    <div class="maps"> </div><!- Карта ->
+    <div class="down"></div><!- Низ страницы ->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
