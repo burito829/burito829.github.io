@@ -195,6 +195,19 @@ nav{
         z-index: 1;
     }  
 }
+@media (max-width: 540px){
+    .main{
+         background: url("../img/mainf.png") center/cover no-repeat;
+    }
+    .title_container{
+        z-index: 2;
+        color: white;
+    }
+    .title_container input{
+        z-index: 2;
+        color: #6245C1;
+}
+}
 
 .about_me {
     width: 100%;
@@ -252,11 +265,11 @@ nav{
     font-size: 16px;
     font-weight: bold;
     color: #6d7682; 
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 12px 7px 12px 25px;
     border-radius: 5%;
     background:  url("../img/ico_dow.png") 5px center/auto no-repeat;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: my_disco4 2s ease forwards;
     -o-animation: my_disco4 2s ease forwards;
     animation: my_disco4 2s ease forwards;
@@ -464,6 +477,7 @@ nav{
 }
 .price_container2 ul{
     width: 100%;
+    padding-left: 0px;
     opacity: 1;
     -webkit-animation: pc4 2s ease forwards;
     -o-animation: pc4 2s ease forwards;
@@ -510,7 +524,6 @@ nav{
 }
 
 .statistics_container {
-    border: 2px solid rgb(0,0,0);
     margin-top: 4%;
     padding-bottom: 5%;
     background:  url("../img/minus.png") center 30px/auto no-repeat;
@@ -536,7 +549,7 @@ nav{
 }
 .statistics_container2 {
     width: 100%;
-    border: 2px solid rgb(10,100,0);
+   margin-top: 5%;
    
 }
 .scl2{
@@ -570,7 +583,7 @@ nav{
     margin-top: 4%;
     padding-bottom: 5%;
     background:  url("../img/minus.png") center 30px/auto no-repeat;
-    opacity: 0;
+    opacity: 1;
     text-align: center; 
     -webkit-animation: cm 2s ease forwards;
     -o-animation: cm 2s ease forwards;
@@ -679,13 +692,10 @@ nav{
 }
 
 .Name_Email {
-    border: 2px solid rgb(15,220,100);
-    height: 100%;
     margin-top: 23px;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    padding: 0px, 20px;
 }
 .Name_Email input {
     float: left;
@@ -722,19 +732,16 @@ nav{
     padding: 2px 2px;
     transform: scale(1.1);
 }
-
 .tb{
     margin-top: 14px;
     text-align: center;
-    border: 2px solid rgb(155,220,100);
-    display: flex;
-    flex-direction: column;
-} 
-
-.contact_container2 textarea {
  
-     display: block;
+    
+   
+} 
+.tb textarea {
      height: 96px;
+     width: 95%;
      margin-top: 14px;
      color: #5d5d5e;
     opacity: 1;
@@ -745,18 +752,18 @@ nav{
     -o-animation-delay: 3.2s;
     animation-delay: 3.2s;
 }
-.contact_container2 textarea:active{
+.tb textarea:active{
     color: white;
 }
-.contact_container2 textarea:visited{
+.tb textarea:visited{
     color: white;
 }
-.contact_container2 textarea:hover{
+.tb textarea:hover{
     color: white;
     background-color: #6245C1;
     border: 4px solid #6346C1;
 }
-.contact_container2 textarea:focus{
+.tb textarea:focus{
     color: white;
     background-color: #b8faff;
     border: 2px solid #6346C1;
@@ -766,13 +773,18 @@ nav{
     padding: 2px 2px;
     transform: scale(1.05);
 }
-.contact_container2 #button { 
+.butts{
+    margin-top: 5px;
     display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.butts #button { 
     border: 3px solid #ffffff;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff; 
-    padding: 12px 10px;
+    padding: 10px 8px;
     border-radius: 5%;
     opacity: 1;
     background-color: transparent;
@@ -783,25 +795,23 @@ nav{
     -o-animation-delay: 4s;
     animation-delay: 4s;
 }
-.contact_container2 #button:visited{
+.butts #button:visited{
     color: white;
 }
-.contact_container2 #button:hover{
+.butts #button:hover{
     color: white;
     background-color: #6245C1;
     border: 4px solid #6346C1;
 }
-.contact_container2 #button:active{
-    float: left;
+.butts #button:active{
     display: block;
-    border: 4px solid #6346C1;
+    border: 3px solid #6346C1;
     font-size: 16px;
     font-weight: bold;
     color: white; 
-    margin: 32px 0px 15px 720px;
-    padding: 12px 10px;
+    padding: 10px 8px;
     background-color: #6245C1;
-    border-radius: 10%;
+    border-radius: 6%;
     transform: scale(1.2);
 }
 

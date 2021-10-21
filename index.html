@@ -68,7 +68,7 @@ function showPage() {
     <div class="main"> <!- Титульный блок ->
        <div class="container h-100">
          <div class="row align-items-center h-100">
-       <div class="col-6 " >
+       <div class="col-6 col-xs-12 " >
         <div class="title_container">
             <h1>Привет<br> Я Прилепо Юрий</h1>
             <h4>Фулл стек веб-разработчик и Android-разработчик</h4> 
@@ -187,7 +187,7 @@ function showPage() {
         </div>
     </div>
     <div class="statistics"> <!- Блок: Немного статистики ->
-     <section id="stc" class=" align-items-center justify-content-center">
+     <section id="stc" class=" align-items-center justify-content-center w-100">
       <div class="container text-center">
          <div class="row justify-content-center">   
        <div class="col-md-6 col-lg-8" >
@@ -275,22 +275,33 @@ function showPage() {
            <h5>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h5> 
            </div>
            </div>
-           <div class="row justify-content-md-center">  
+           </div>
+             <div class="container">
+              <div class="row justify-content-center">  
            <div class="col-8  align-self-center " >
-           <div class="Name_Email">
-               <input id="type_text1" type="text" name="type_text1" value="" placeholder="Имя"> 
+              <div class="Name_Email">
+               <input id="type_text1" type="text" name="type_text1" value="" placeholder="Имя">
+                 
                <input id="type_text2" type="text" name="type_text2" value="" placeholder="Email"> 
                </div>
+           </div>
+           </div>
+           
+           <div class="row justify-content-center">
+           <div class="col-8 ">
             <div class="tb">
            <textarea id="type_text3"name="type_text3" id="1" cols="10" rows="10" placeholder="Сообщение"></textarea> 
-            
            </div>
-            </div> 
-             </div>  
-             <input id="button" type="button" value="Отправить">     
-        
+           </div>
+               </div>
     </div>
-    
+          <div class="row justify-content-center">
+           <div class="col-4 ">
+           <div class="butts">
+            <input id="button" type="button" value="Отправить"> 
+            </div>
+           </div>
+        </div>
     </div>
     <div class="maps"> </div><!- Карта ->
     <div class="down"></div><!- Низ страницы ->
