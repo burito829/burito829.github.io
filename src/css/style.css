@@ -50,7 +50,7 @@ nav{
     display: inline-block;
     transform: scale(1);
     text-decoration: none;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: upd 1s ease forwards;
     -o-animation: upd 1s ease forwards;
     animation: upd 1s ease forwards;
@@ -79,7 +79,7 @@ nav{
     font-size: 18px;
     margin-right: 20px;
     text-transform: capitalize;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: upd 1s ease forwards;
     -o-animation: upd 1s ease forwards;
     animation: upd 1s ease forwards;
@@ -120,7 +120,7 @@ nav{
     float: left;
     color: #2c384a;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: wzh 2s ease forwards;
     -o-animation: wzh 2s ease forwards;
     animation: wzh 2s ease forwards;
@@ -195,6 +195,19 @@ nav{
         z-index: 1;
     }  
 }
+@media (max-width: 540px){
+    .main{
+         background: url("../img/mainf.png") center/cover no-repeat;
+    }
+    .title_container{
+        z-index: 2;
+        color: white;
+    }
+    .title_container input{
+        z-index: 2;
+        color: #6245C1;
+}
+}
 
 .about_me {
     width: 100%;
@@ -202,9 +215,9 @@ nav{
     text-align: center;
 }
 .my_discription_container { 
-    margin-top: 4%;
+    margin-top: 5%;
     background:  url("../img/minus.png") center 30px/auto no-repeat;
-    opacity: 0;
+    opacity: 1;
     float: left;
     -webkit-animation: my_disco1 2s ease forwards;
     -o-animation: my_disco1 2s ease forwards;
@@ -217,7 +230,7 @@ nav{
     font-size: 24px; 
     font-weight: bold;
     color: #263244; 
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: my_disco2 2s ease forwards;
     -o-animation: my_disco2 2s ease forwards;
     animation: my_disco2 2s ease forwards;
@@ -226,7 +239,7 @@ nav{
     animation-delay: 3s;
 }
 .my_discription_container img{
-    opacity: 0;
+    opacity: 1;
     margin-top: 5%;
     -webkit-animation: my_disco3 2s ease forwards;
     -o-animation: my_disco3 2s ease forwards;
@@ -239,7 +252,7 @@ nav{
     font-size: 16px; 
     margin-top: 5%;
     color: #3f495a; 
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: upd 2s ease forwards;
     -o-animation: upd 2s ease forwards;
     animation: upd 2s ease forwards;
@@ -252,11 +265,11 @@ nav{
     font-size: 16px;
     font-weight: bold;
     color: #6d7682; 
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 12px 7px 12px 25px;
     border-radius: 5%;
     background:  url("../img/ico_dow.png") 5px center/auto no-repeat;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: my_disco4 2s ease forwards;
     -o-animation: my_disco4 2s ease forwards;
     animation: my_disco4 2s ease forwards;
@@ -295,7 +308,7 @@ nav{
     margin-top: 4%;
     padding-bottom: 5%;
     background:  url("../img/minus.png") center 30px/auto no-repeat;
-    opacity: 0;
+    opacity: 1;
     text-align: center;
     -webkit-animation: my_disco1 2s ease forwards;
     -o-animation: my_disco1 2s ease forwards;
@@ -308,7 +321,7 @@ nav{
     font-size: 24px; 
     font-weight: bold;
     color: #263244; 
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: my_disco2 2s ease forwards;
     -o-animation: my_disco2 2s ease forwards;
     animation: my_disco2 2s ease forwards;
@@ -317,25 +330,12 @@ nav{
     animation-delay: 3s;
 }
 .skills_container2 {
-    text-align: center;
-    width: 100%;
+     width: 100%;
+   margin-top: 15%;
 }
-.skills_container2 ul{
-    z-index: 11;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.skills_container2 li {
-    list-style: none;
-    opacity: 0;
-    -webkit-animation: my_sk2 2s ease forwards;
-    -o-animation: my_sk2 2s ease forwards;
-    animation: my_sk2 2s ease forwards;
-    -webkit-animation-delay: 3s;
-    -o-animation-delay: 3s;
-    animation-delay: 3s;
+.scl1{
+    width: 216px;
+    height: 164px;
 }
 .skills_container2 h5 {    
     color: #d28b2d;
@@ -354,6 +354,15 @@ nav{
 .skills_container img { 
     margin: center;
 }
+@media (max-width: 1400px){
+    .skills_container {
+    margin-bottom: ;
+    }
+    
+    .skills_container2 {
+    margin-top: 5%;
+    }    
+} 
 @media (max-width: 540px){
     .skills_container {
     margin-bottom: 20%;
@@ -363,28 +372,19 @@ nav{
         width: 100%;
         height: 100%;
         padding-bottom: 200px;
-    }
-    
-    .skills_container2 ul{
-    }
-    
-    .skills_container2 li{
-    }
-    
+    }    
 }
 
 .cases {
-    clear: left/right;
     width: 100%;
     height: calc(100% - 200px);
     text-align: center;
-    float: left;
 }
 .cases_container {
     margin-top: 4%;
     padding-bottom: 5%;
     background:  url("../img/minus.png") center 30px/auto no-repeat;
-    opacity: 0;
+    opacity: 1;
     text-align: center;
     -webkit-animation: cs1 2s ease forwards;
     -o-animation: cs1 2s ease forwards;
@@ -397,7 +397,7 @@ nav{
     font-size: 24px; 
     font-weight: bold;
     color: #263244;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: cs2 2s ease forwards;
     -o-animation: cs2 2s ease forwards;
     animation: cs2 2s ease forwards;
@@ -409,7 +409,6 @@ nav{
 .price {
     width: 100%;
     height: calc(100% - 100px);
-    float: left;
 }
 .price_container{
     margin-top: 4%;
@@ -437,14 +436,20 @@ nav{
     animation-delay: 3s;
 }
 .price_container2 { 
-    width: 50%;
-    margin-left: 25%;
+    margin-top: 5%;
+    width: 100%
+}
+.prct{
+    margin: 0px;
+}
+.prct2{
+    margin: 0px;
 }
 .price_container2 h4{ 
     font-size: 20px; 
     font-weight: bold;
     color: #263244;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: pc4 2s ease forwards;
     -o-animation: pc4 2s ease forwards;
     animation: pc4 2s ease forwards;
@@ -464,7 +469,7 @@ nav{
     font-size: 20px; 
     font-weight: bold;
     color: #263244;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: pc4 2s ease forwards;
     -o-animation: pc4 2s ease forwards;
     animation: pc4 2s ease forwards;
@@ -474,7 +479,8 @@ nav{
 }
 .price_container2 ul{
     width: 100%;
-    opacity: 0;
+    padding-left: 0px;
+    opacity: 1;
     -webkit-animation: pc4 2s ease forwards;
     -o-animation: pc4 2s ease forwards;
     animation: pc4 2s ease forwards;
@@ -510,22 +516,20 @@ nav{
     background-attachment: fixed;
     display: flex;
     color: #ffffff;
-    position: relative;
-    float: left;
+  
 }
-.statistics parl{
+ .statistics parl{
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,.6);
-    float: left;
 }
+
 .statistics_container {
     margin-top: 4%;
     padding-bottom: 5%;
     background:  url("../img/minus.png") center 30px/auto no-repeat;
     opacity: 1;
-    text-align: center; 
     -webkit-animation: st 2s ease forwards;
     -o-animation: st 2s ease forwards;
     animation: st 2s ease forwards;
@@ -537,7 +541,7 @@ nav{
     font-size: 24px; 
     font-weight: bold;
     color: #263244; 
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: st1 2s ease forwards;
     -o-animation: st1 2s ease forwards;
     animation: st1 2s ease forwards;
@@ -546,25 +550,13 @@ nav{
     animation-delay: 3s;
 }
 .statistics_container2 {
-    text-align: center;
-}
-.statistics_container2 ul{
-    z-index: 11;
-    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+   margin-top: 5%;
+   
 }
-.statistics_container2 li {
-    list-style: none;
-    opacity: 0;
-    -webkit-animation: my_sk2 2s ease forwards;
-    -o-animation: my_sk2 2s ease forwards;
-    animation: my_sk2 2s ease forwards;
-    -webkit-animation-delay: 3s;
-    -o-animation-delay: 3s;
-    animation-delay: 3s;
+.scl2{
+    width: 216px;
+    height: 164px;
 }
 .statistics_container2 h5 {    
     color: #263244;
@@ -593,7 +585,7 @@ nav{
     margin-top: 4%;
     padding-bottom: 5%;
     background:  url("../img/minus.png") center 30px/auto no-repeat;
-    opacity: 0;
+    opacity: 1;
     text-align: center; 
     -webkit-animation: cm 2s ease forwards;
     -o-animation: cm 2s ease forwards;
@@ -632,7 +624,8 @@ nav{
 .contact_container {
     width: 100%;
     margin-top: 4%;
-    padding-bottom: 2%;
+    padding-bottom: 15%;
+    margin-bottom: 5%;
     background:  url("../img/minus.png") center 30px/auto no-repeat;
     opacity: 1;
     text-align: center; 
@@ -657,17 +650,18 @@ nav{
 }
 .contact_container2 {
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 .contact_container2 p {
-    width: 100%;
     font-size: 14px; 
     font-weight: bold;
     color: #ffffff; 
+    margin-bottom: 5%;
 }
 .contact_container2 ul{
     width: 100%;
-    margin-top: 3%;  
+    margin-top: 5%; 
+    margin-bottom: 5%;
     text-transform: capitalize;
     display: flex;
     justify-content: space-between;
@@ -702,13 +696,10 @@ nav{
 }
 
 .Name_Email {
-    border: 2px solid rgb(15,220,100);
-    height: 100%;
     margin-top: 23px;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    padding: 0px, 20px;
 }
 .Name_Email input {
     float: left;
@@ -745,20 +736,16 @@ nav{
     padding: 2px 2px;
     transform: scale(1.1);
 }
-
 .tb{
-
     margin-top: 14px;
     text-align: center;
-    border: 2px solid rgb(155,220,100);
-    display: flex;
-    flex-direction: column;
-} 
-
-.contact_container2 textarea {
  
-     display: block;
+    
+   
+} 
+.tb textarea {
      height: 96px;
+     width: 95%;
      margin-top: 14px;
      color: #5d5d5e;
     opacity: 1;
@@ -769,18 +756,18 @@ nav{
     -o-animation-delay: 3.2s;
     animation-delay: 3.2s;
 }
-.contact_container2 textarea:active{
+.tb textarea:active{
     color: white;
 }
-.contact_container2 textarea:visited{
+.tb textarea:visited{
     color: white;
 }
-.contact_container2 textarea:hover{
+.tb textarea:hover{
     color: white;
     background-color: #6245C1;
     border: 4px solid #6346C1;
 }
-.contact_container2 textarea:focus{
+.tb textarea:focus{
     color: white;
     background-color: #b8faff;
     border: 2px solid #6346C1;
@@ -790,13 +777,18 @@ nav{
     padding: 2px 2px;
     transform: scale(1.05);
 }
-.contact_container2 #button { 
+.butts{
+    margin-top: 5px;
     display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.butts #button { 
     border: 3px solid #ffffff;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff; 
-    padding: 12px 10px;
+    padding: 10px 8px;
     border-radius: 5%;
     opacity: 1;
     background-color: transparent;
@@ -807,30 +799,41 @@ nav{
     -o-animation-delay: 4s;
     animation-delay: 4s;
 }
-.contact_container2 #button:visited{
+.butts #button:visited{
     color: white;
 }
-.contact_container2 #button:hover{
+.butts #button:hover{
     color: white;
     background-color: #6245C1;
     border: 4px solid #6346C1;
 }
-.contact_container2 #button:active{
-    float: left;
+.butts #button:active{
     display: block;
-    border: 4px solid #6346C1;
+    border: 3px solid #6346C1;
     font-size: 16px;
     font-weight: bold;
     color: white; 
-    margin: 32px 0px 15px 720px;
-    padding: 12px 10px;
+    padding: 10px 8px;
     background-color: #6245C1;
-    border-radius: 10%;
+    border-radius: 6%;
     transform: scale(1.2);
 }
+@media (max-width: 1400px){
+    .contact_container {
+    margin-top: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 1%;
+}
+.contact_container2 p {
+    margin-bottom: 3%;
+}
+.contact_container2 ul{
+    margin-top: 3%; 
+    margin-bottom: 3%;    
+}  
+}
 
-
-<! Анимации>
+/* Анимации>
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -1120,3 +1123,4 @@ nav{
         margin-left: 0px;
     }
 }
+*/
